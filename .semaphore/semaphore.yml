@@ -13,7 +13,7 @@ blocks:
             - echo "build service 1"
     dependencies: []
     run:
-      when: 'change_in(''/service1/'', { default_branch: ''main''} ). '
+      when: 'change_in(''/service1/'', { default_branch: ''main''} )'
   - name: Build service 2
     dependencies: []
     task:
