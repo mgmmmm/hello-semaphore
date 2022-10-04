@@ -10,7 +10,9 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - echo "build service 1"
+            - echo "$PASSWORD"
+      secrets:
+        - name: mysecret
     dependencies: []
     run:
       when: 'change_in(''/service1/'', { default_branch: ''main''} )'
